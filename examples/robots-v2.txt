@@ -1,0 +1,12 @@
+# 第二版：放开 /tmp，但收紧查询串结尾匹配
+User-agent: *
+Disallow: /private/
+Allow: /private/public/
+Disallow: /*.tmp$
+Disallow: /*?print=1$
+
+User-agent: archiver-bot
+Disallow: /archive/
+Allow: /archive/open/
+
+Sitemap: https://example.invalid/sitemap.xml

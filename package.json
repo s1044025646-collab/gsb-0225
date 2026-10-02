@@ -1,0 +1,25 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-sqlite --import tsx --test tests/*.test.ts",
+    "start": "node --experimental-sqlite dist/src/serve.js",
+    "dev": "node --experimental-sqlite --import tsx src/serve.ts",
+    "demo": "powershell -ExecutionPolicy Bypass -File demo.ps1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "robots-lab": "dist/src/cli.js"
+  }
+}

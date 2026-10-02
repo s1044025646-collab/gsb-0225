@@ -1,0 +1,15 @@
+# robots-lab 示例规则（虚构站点 example.invalid，仅作文本实验）
+User-agent: *
+Disallow: /private/
+Allow: /private/public/
+Disallow: /tmp
+Disallow: /*.tmp$
+
+# 同名机器人分散在两个组，选择阶段必须合并
+User-agent: archiver-bot
+Disallow: /archive/
+
+User-agent: archiver-bot
+Allow: /archive/open/
+
+Sitemap: https://example.invalid/sitemap.xml
