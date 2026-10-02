@@ -1,0 +1,15 @@
+# 虚构站点 example.invalid 的规则（版本 v1）
+# 仅用于本地实验，不代表任何真实网站
+
+User-agent: *
+Disallow: /private
+Disallow: /tmp
+Allow: /private/public
+
+User-agent: archiver
+Disallow:
+
+User-agent: *
+Disallow: /*.json$
+
+Sitemap: https://example.invalid/sitemap.xml

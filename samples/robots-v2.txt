@@ -1,0 +1,14 @@
+# 虚构站点 example.invalid 的规则（版本 v2）
+# 相对 v1 的变化：
+#  1) /private/public 不再显式放行
+#  2) 取消 *.json$ 查询结尾限制（示例改为只禁止 /tmp）
+#  3) 新增专用机器人组 archiver 禁止 /archive
+
+User-agent: *
+Disallow: /private
+Disallow: /tmp
+
+User-agent: archiver
+Disallow: /archive
+
+Sitemap: https://example.invalid/sitemap.xml

@@ -1,0 +1,11 @@
+[
+  { "robot": "genericbot", "path": "/" },
+  { "robot": "genericbot", "path": "/private/secret.txt" },
+  { "robot": "genericbot", "path": "/private/public/logo.png" },
+  { "robot": "genericbot", "path": "/tmp/a" },
+  { "robot": "genericbot", "path": "/data/list.json" },
+  { "robot": "genericbot", "path": "/data/list.json?format=raw" },
+  { "robot": "archiver", "path": "/private/secret.txt" },
+  { "robot": "Archiver", "path": "/archive/2026" },
+  { "robot": "googlebot-news", "path": "/private/x" }
+]
